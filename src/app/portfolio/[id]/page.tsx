@@ -16,10 +16,10 @@ export default function ProjectDetail({ params }: Props) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4">项目未找到</h1>
-          <p className="text-gray-600 mb-8">抱歉，您要查看的项目不存在。</p>
+          <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
+          <p className="text-gray-600 mb-8">Sorry, the project you are looking for does not exist.</p>
           <Link href="/portfolio" className="btn-primary">
-            返回作品集
+            Back to Portfolio
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function ProjectDetail({ params }: Props) {
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
           <Link href="/portfolio" className="text-gray-600 hover:text-gray-900">
-            ← 返回作品集
+            ← Back to Portfolio
           </Link>
         </div>
 
@@ -43,11 +43,11 @@ export default function ProjectDetail({ params }: Props) {
           </span>
           <span className="text-gray-500">{project.date}</span>
           {project.client && (
-            <span className="text-gray-500">客户: {project.client}</span>
+            <span className="text-gray-500">Client: {project.client}</span>
           )}
         </div>
 
-        {/* 项目主图/视频 */}
+        {/* Main Project Image/Video */}
         <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden mb-8">
           {project.videoUrl ? (
             <video
@@ -67,19 +67,19 @@ export default function ProjectDetail({ params }: Props) {
           )}
         </div>
 
-        {/* 项目描述 */}
+        {/* Project Description */}
         <div className="prose max-w-none mb-12">
-          <h2 className="text-2xl font-bold mb-4">项目描述</h2>
+          <h2 className="text-2xl font-bold mb-4">Project Description</h2>
           <p className="text-gray-600 mb-6">{project.description}</p>
           {project.details && (
             <p className="text-gray-600">{project.details}</p>
           )}
         </div>
 
-        {/* 使用的工具 */}
+        {/* Tools Used */}
         {project.tools && (
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">使用工具</h2>
+            <h2 className="text-2xl font-bold mb-4">Tools Used</h2>
             <div className="flex flex-wrap gap-2">
               {project.tools.map((tool) => (
                 <span
@@ -93,10 +93,10 @@ export default function ProjectDetail({ params }: Props) {
           </div>
         )}
 
-        {/* 其他图片 */}
+        {/* Additional Images */}
         {project.images && (
           <div>
-            <h2 className="text-2xl font-bold mb-4">更多图片</h2>
+            <h2 className="text-2xl font-bold mb-4">More Images</h2>
             <div className="grid grid-cols-2 gap-4">
               {project.images.map((image, index) => (
                 <div
@@ -105,7 +105,7 @@ export default function ProjectDetail({ params }: Props) {
                 >
                   <Image
                     src={image}
-                    alt={`${project.title} - 图片 ${index + 1}`}
+                    alt={`${project.title} - Image ${index + 1}`}
                     fill
                     className="object-cover"
                   />

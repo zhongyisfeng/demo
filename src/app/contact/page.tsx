@@ -2,19 +2,19 @@ export default function Contact() {
   return (
     <div className="py-12 px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8">联系我</h1>
+        <h1 className="text-4xl font-bold text-center mb-8">Contact Me</h1>
         <p className="text-center text-gray-600 mb-12">
-          如果您对我的作品感兴趣，或者想要讨论合作机会，请随时与我联系。
+          If you're interested in my work or would like to discuss collaboration opportunities, please feel free to contact me.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* 联系表单 */}
+          {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-semibold mb-6">发送消息</h2>
+            <h2 className="text-2xl font-semibold mb-6">Send Message</h2>
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  姓名
+                  Name
                 </label>
                 <input
                   type="text"
@@ -26,7 +26,7 @@ export default function Contact() {
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  邮箱
+                  Email
                 </label>
                 <input
                   type="email"
@@ -38,7 +38,7 @@ export default function Contact() {
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  消息
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -52,35 +52,35 @@ export default function Contact() {
                 type="submit"
                 className="w-full bg-gray-900 text-white py-3 px-6 rounded-md hover:bg-gray-800 transition-colors"
               >
-                发送消息
+                Send Message
               </button>
             </form>
           </div>
 
-          {/* 其他联系方式 */}
+          {/* Other Contact Methods */}
           <div>
-            <h2 className="text-2xl font-semibold mb-6">其他联系方式</h2>
+            <h2 className="text-2xl font-semibold mb-6">Other Contact Methods</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-medium text-lg mb-2">邮箱</h3>
-                <p className="text-gray-600">your.email@example.com</p>
+                <h3 className="font-medium text-lg mb-2">Email</h3>
+                <p className="text-gray-600">fengxinming@gmail.com</p>
               </div>
               <div>
-                <h3 className="font-medium text-lg mb-2">电话</h3>
-                <p className="text-gray-600">+86 xxx xxxx xxxx</p>
+                <h3 className="font-medium text-lg mb-2">Phone</h3>
+                <p className="text-gray-600">+86 138 1234 5678</p>
               </div>
               <div>
-                <h3 className="font-medium text-lg mb-2">社交媒体</h3>
+                <h3 className="font-medium text-lg mb-2">Social Media</h3>
                 <div className="space-y-2">
-                  <a href="#" className="block text-gray-600 hover:text-gray-900">微博</a>
-                  <a href="#" className="block text-gray-600 hover:text-gray-900">抖音</a>
-                  <a href="#" className="block text-gray-600 hover:text-gray-900">Bilibili</a>
+                  <a href="https://weibo.com/zhongyisfeng" className="block text-gray-600 hover:text-gray-900">Weibo</a>
+                  <a href="https://www.douyin.com/zhongyisfeng" className="block text-gray-600 hover:text-gray-900">Douyin</a>
+                  <a href="https://space.bilibili.com/zhongyisfeng" className="block text-gray-600 hover:text-gray-900">Bilibili</a>
                 </div>
               </div>
               <div>
-                <h3 className="font-medium text-lg mb-2">工作时间</h3>
-                <p className="text-gray-600">周一至周五: 9:00 - 18:00</p>
-                <p className="text-gray-600">周末: 根据约定</p>
+                <h3 className="font-medium text-lg mb-2">Working Hours</h3>
+                <p className="text-gray-600">Monday to Friday: 9:00 - 18:00</p>
+                <p className="text-gray-600">Weekend: By appointment</p>
               </div>
             </div>
           </div>

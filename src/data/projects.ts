@@ -15,49 +15,61 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "角色动画设计",
-    description: "为游戏开发的角色动画系列，包含行走、跑步、跳跃等动作。展现了角色的个性和流畅的动作效果。",
-    category: "角色动画",
+    title: "Character Animation Design",
+    description: "A series of character animations developed for games, including walking, running, jumping, and other actions. Showcases character personality and fluid motion effects.",
+    category: "Character Animation",
     thumbnail: "/images/projects/character-animation.jpg",
     videoUrl: "/videos/character-animation.mp4",
     date: "2023-12",
     tools: ["Maya", "After Effects"],
-    client: "某游戏工作室",
-    details: "这是一个完整的角色动画系列，包含20多个基础动作和特殊动作。重点关注角色的重量感和动作的流畅性。"
+    client: "Game Studio",
+    details: "This is a complete character animation series containing over 20 basic and special actions. Focus on character weight and motion fluidity."
   },
   {
     id: 2,
-    title: "场景动画",
-    description: "电影场景动画制作，展现史诗般的场景转换效果。通过光影和粒子效果增强视觉冲击力。",
-    category: "场景动画",
+    title: "Scene Animation",
+    description: "Film scene animation production, showcasing epic scene transitions. Enhanced visual impact through lighting and particle effects.",
+    category: "Scene Animation",
     thumbnail: "/images/projects/scene-animation.jpg",
     videoUrl: "/videos/scene-animation.mp4",
     date: "2023-09",
     tools: ["Houdini", "Nuke"],
-    client: "某电影制作公司",
-    details: "为电影开场序列制作的场景动画，展现了从宇宙到微观世界的无缝转换。"
+    client: "Film Production Company",
+    details: "Scene animation created for the film's opening sequence, demonstrating seamless transitions from cosmic to microscopic worlds."
   },
   {
     id: 3,
-    title: "动画短片",
-    description: "独立制作的动画短片，讲述一个温暖的故事。融合2D和3D动画技术，创造独特的视觉风格。",
-    category: "短片",
+    title: "Animated Short Film",
+    description: "Independently produced animated short film telling a heartwarming story. Combines 2D and 3D animation techniques to create a unique visual style.",
+    category: "Short Film",
     thumbnail: "/images/projects/short-film.jpg",
     videoUrl: "/videos/short-film.mp4",
     date: "2023-06",
     tools: ["Blender", "Toon Boom"],
-    details: "这是一部5分钟的原创动画短片，讲述了一个关于友情和勇气的故事。获得了多个动画节展映机会。"
+    details: "This is a 5-minute original animated short film that tells a story about friendship and courage. It has been screened at multiple animation festivals."
   },
   {
     id: 4,
-    title: "产品动画",
-    description: "为科技产品制作的展示动画，突出产品特性和使用场景。",
-    category: "商业动画",
+    title: "Product Animation",
+    description: "Promotional animation for tech products, highlighting product features and use cases.",
+    category: "Commercial Animation",
     thumbnail: "/images/projects/product-animation.jpg",
     videoUrl: "/videos/product-animation.mp4",
     date: "2023-03",
     tools: ["Cinema 4D", "After Effects"],
-    client: "某科技公司",
-    details: "为新产品发布会制作的宣传动画，通过动态图形展示产品功能和优势。"
+    client: "Tech Company",
+    details: "Promotional animation created for new product launch event, showcasing product features and benefits through motion graphics."
+  },
+  {
+    id: 5,
+    title: "Motion Graphics Design",
+    description: "Creative motion graphics design for digital platforms and social media. Engaging visual storytelling through dynamic typography and abstract animations.",
+    category: "Motion Graphics",
+    thumbnail: "/images/projects/motion-graphics.jpg",
+    videoUrl: "/videos/motion-graphics.mp4",
+    date: "2024-01",
+    tools: ["After Effects", "Illustrator"],
+    client: "Digital Agency",
+    details: "A series of motion graphics designs created for social media campaigns, featuring dynamic typography and abstract animations that enhance brand storytelling."
   }
 ]; 

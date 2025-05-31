@@ -5,19 +5,19 @@ import { projects } from '@/data/projects';
 import ProjectCard from '@/components/ProjectCard';
 
 export default function Portfolio() {
-  const [selectedCategory, setSelectedCategory] = useState<string>('全部');
-  const categories = ['全部', ...new Set(projects.map(p => p.category))];
+  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const categories = ['All', ...new Set(projects.map(p => p.category))];
 
-  const filteredProjects = selectedCategory === '全部'
+  const filteredProjects = selectedCategory === 'All'
     ? projects
     : projects.filter(p => p.category === selectedCategory);
 
   return (
     <div className="py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8">作品集</h1>
+        <h1 className="text-4xl font-bold text-center mb-8">Portfolio</h1>
         
-        {/* 作品分类筛选 */}
+        {/* Category Filter */}
         <div className="flex justify-center space-x-4 mb-12">
           {categories.map((category) => (
             <button
@@ -34,7 +34,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* 作品网格 */}
+        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />

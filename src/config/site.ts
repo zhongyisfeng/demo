@@ -1,22 +1,26 @@
 export const siteConfig = {
   name: "Your Name",
-  title: "动画作品集 | Your Name",
-  description: "专业动画师作品集展示",
+  title: "Animation Portfolio | Your Name",
+  description: "Professional Animator Portfolio Showcase",
   mainNav: [
     {
-      title: "首页",
+      title: "Home",
       href: "/",
     },
     {
-      title: "作品集",
+      title: "Portfolio",
       href: "/portfolio",
     },
     {
-      title: "关于我",
+      title: "School",
+      href: "/school",
+    },
+    {
+      title: "About",
       href: "/about",
     },
     {
-      title: "联系方式",
+      title: "Contact",
       href: "/contact",
     },
   ],
@@ -29,8 +33,8 @@ export const siteConfig = {
     email: "your.email@example.com",
     phone: "+86 xxx xxxx xxxx",
     workingHours: {
-      weekdays: "周一至周五: 9:00 - 18:00",
-      weekends: "周末: 根据约定",
+      weekdays: "Monday to Friday: 9:00 - 18:00",
+      weekends: "Weekend: By appointment",
     },
   },
 } 
